@@ -9,7 +9,7 @@ registro_edades = {
     "Maria": 27
 } 
 
-nombre_buscado = input("Escribe  un nombre: ")
+nombre_buscado = input("Escribe  un nombre: ").capitalize()
 
 if nombre_buscado in registro_edades:
     edad = registro_edades[nombre_buscado]
