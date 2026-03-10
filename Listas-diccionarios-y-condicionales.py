@@ -28,3 +28,17 @@ if nombre_buscado in registro_edades:
 else:
     print("La persona no fue encontrada.")
 
+op = input("¿Deseas cambiar la edad? (si/no): ").lower()
+
+if op == "si":
+        entrada = input("Nueva edad: ")
+        if entrada.isdigit():
+            nueva = int(entrada)
+            registro_edades[nombre_buscado] = nueva
+            print(f"Edad de {nombre_buscado} actualizada a {nueva}.")
+        else:
+            print("Error: Debes ingresar un número válido.")
+else:
+    print("La persona no fue encontrada.")
+
+print(f"\nHay {len(nombres)} personas en el registro.")
