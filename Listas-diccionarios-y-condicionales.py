@@ -14,6 +14,11 @@ registro_edades = {
     "Moises" : 23
 } 
 
+print("Personas registradas:")
+for nombre in nombres:
+    print("-", nombre)
+
+    
 nombre_buscado = input("Escribe  un nombre: ").capitalize()
 
 if nombre_buscado in registro_edades:
