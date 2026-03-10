@@ -8,3 +8,7 @@ registro_edades = {
     "Said": 35,
     "Maria": 27
 } 
+
+nombre_buscado = input("Escribe  un nombre: ")
+
+
