@@ -11,4 +11,10 @@ registro_edades = {
 
 nombre_buscado = input("Escribe  un nombre: ")
 
+if nombre_buscado in registro_edades:
+    edad = registro_edades[nombre_buscado]
+    print(f"{nombre_buscado} tiene {edad} años.")
+
+else:
+    print("La persona no fue encontrada.")
 
